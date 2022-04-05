@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 // https://codeforces.com/contest/1512/problem/A
 
 int checkAndGetSpyIndex(int arr[], int len) {

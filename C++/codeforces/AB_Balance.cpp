@@ -2,6 +2,8 @@
 using namespace std;
 #define br "\n";
 
+// https://codeforces.com/problemset/problem/1606/A
+
 string getABorBA(string in, int i) {
     string ss;
     ss += in[i];
