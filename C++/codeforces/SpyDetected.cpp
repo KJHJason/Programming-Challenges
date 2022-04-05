@@ -1,7 +1,7 @@
+// https://codeforces.com/contest/1512/problem/A
+
 #include <bits/stdc++.h>
 using namespace std;
-
-// https://codeforces.com/contest/1512/problem/A
 
 int checkAndGetSpyIndex(int arr[], int len) {
     int first = arr[0];

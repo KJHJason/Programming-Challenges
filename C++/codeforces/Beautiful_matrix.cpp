@@ -1,7 +1,7 @@
+// https://codeforces.com/problemset/problem/263/A
+
 #include <bits/stdc++.h>
 using namespace std;
-
-// https://codeforces.com/problemset/problem/263/A
 
 int main() {
     int matrix[5][5];

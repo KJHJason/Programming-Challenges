@@ -1,7 +1,7 @@
+// https://codeforces.com/contest/1644/problem/A
+
 #include <bits/stdc++.h>
 using namespace std;
-
-// https://codeforces.com/contest/1644/problem/A
 
 int main() {
     int t; cin >> t;

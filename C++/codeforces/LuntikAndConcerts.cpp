@@ -1,8 +1,8 @@
+// https://codeforces.com/contest/1582/problem/A
+
 #include <bits/stdc++.h>
 using namespace std;
 #define br "\n";
-
-// https://codeforces.com/contest/1582/problem/A
 
 int main() {
     int t; cin >> t;

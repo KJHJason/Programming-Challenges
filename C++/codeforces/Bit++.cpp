@@ -1,7 +1,7 @@
+// https://codeforces.com/contest/282/problem/A
+
 #include <bits/stdc++.h>
 using namespace std;
-
-// https://codeforces.com/contest/282/problem/A
 
 int solve(string s) {
     if (s.find("--") != string::npos) {

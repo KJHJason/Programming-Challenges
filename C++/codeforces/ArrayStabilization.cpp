@@ -1,7 +1,7 @@
+// https://codeforces.com/problemset/problem/1095/B
+
 #include <bits/stdc++.h>
 using namespace std;
-
-// https://codeforces.com/problemset/problem/1095/B
 
 void solve(int len, int arr[]) {
     sort(arr, arr + len);

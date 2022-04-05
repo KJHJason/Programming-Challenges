@@ -1,8 +1,8 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define br "\n";
-
 // https://codeforces.com/problemset/problem/1606/A
+
+#include <bits/stdc++.h>
+using namespace std;1
+#define br "\n";
 
 string getABorBA(string in, int i) {
     string ss;

@@ -1,4 +1,5 @@
 # https://www.codewars.com/kata/5550d638a99ddb113e0000a2/train/python
+
 def josephus(items,k):
     arr = []
     index = 0
@@ -8,6 +9,7 @@ def josephus(items,k):
     return arr
 
 # https://www.codewars.com/kata/555624b601231dc7a400017a/train/python
+
 def josephus_survivor(n,k):
     popped = index = 0
     nArr = [i for i in range(1, n+1)]

@@ -1,7 +1,7 @@
+// https://codeforces.com/contest/1095/problem/A
+
 #include <bits/stdc++.h>
 using namespace std;
-
-// https://codeforces.com/contest/1095/problem/A
 
 void solve(int len, string str) {
     int offset = { 0 };
