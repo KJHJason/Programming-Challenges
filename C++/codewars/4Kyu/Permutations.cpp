@@ -20,4 +20,5 @@ int main()
     for (auto &s : ans) {
         std::cout << s << std::endl;
     }
+    return 0;
 }
