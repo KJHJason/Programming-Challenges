@@ -17,13 +17,4 @@ def fib(n):
     if n == 0: return 0
     return (matrix('0 1; 1 1',object) ** n)[0, 1] if n > 0 else (matrix('-1 1; 1 0',object) ** abs(n))[0, 1]
 
-print(fib(-6))
-
-# recursive binet's formula
-from functools import lru_cache
-@lru_cache(maxsize=None) 
-def fbr(n):
-    if n > 2: return fbr(n//2+1)*fbr(n-n//2) + fbr(n//2)*fbr(n-n//2-1)
-    return [0,1,1][n]
-
-print(fib(-6))
+print(fib(-25))
