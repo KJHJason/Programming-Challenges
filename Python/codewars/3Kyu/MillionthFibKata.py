@@ -15,6 +15,6 @@
 from numpy import matrix
 def fib(n):
     if n == 0: return 0
-    return (matrix('0 1; 1 1',object) ** n)[0, 1] if n > 0 else (matrix('-1 1; 1 0',object) ** abs(n))[0, 1]
+    return (matrix("0 1; 1 1",object) ** n)[0, 1] if n > 0 else (matrix("-1 1; 1 0",object) ** abs(n))[0, 1]
 
-print(fib(-25))
+print(fib(1479048))
