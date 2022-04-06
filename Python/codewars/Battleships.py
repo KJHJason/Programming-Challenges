@@ -12,7 +12,7 @@ def damaged_or_sunk (board, attacks):
     yHeight = len(board)
 
     # print(shipDict)
-    attackedDict = {k: 0 for k, v in shipDict.items()}
+    attackedDict = {k: 0 for k in shipDict}
     for attack in attacks:
         x = attack[0]
         y = attack[1]
