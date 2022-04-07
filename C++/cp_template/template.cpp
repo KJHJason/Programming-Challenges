@@ -1,15 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef vector<int> vi;
+typedef pair<int, int> pi
+
 typedef long int int32;
 typedef unsigned long int uint32;
 typedef long long int int64;
 typedef unsigned long long int uint64;
-typedef int_fast32_t if32;
-typedef int_fast64_t if64;
+typedef int_fast32_t fint32;
+typedef int_fast64_t fint64;
 
-#define pb push_back
-#define mp make_pair
+#define PB push_back
+#define MP make_pair
+#define F first
+#define S second
 
 void solve() 
 {
