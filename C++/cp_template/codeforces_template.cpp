@@ -2,7 +2,7 @@
 using namespace std;
 
 typedef vector<int> vi;
-typedef pair<int, int> pi
+typedef pair<int, int> pi;
 
 typedef long int int32;
 typedef unsigned long int uint32;
