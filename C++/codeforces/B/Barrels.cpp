@@ -1,3 +1,5 @@
+// https://codeforces.com/contest/1430/problem/B
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -20,7 +22,17 @@ typedef unsigned long long int uint64;
 
 void solve() 
 {
-    // code here
+    int n, pours; cin >> n >> pours;
+    vif64 v(n);
+    for (auto& i : v) cin >> i;
+    
+    sort(v.begin(), v.end());
+    for (fint64 i = 1; i <= pours; ++i) {
+        if (v.back() == 0) break;
+        v.back() += v[n - (i + 1)];
+    }
+
+    cout << v.back() << "\n";
 }
 
 int main() 

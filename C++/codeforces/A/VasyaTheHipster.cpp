@@ -1,3 +1,5 @@
+// https://codeforces.com/contest/581/problem/A
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -20,7 +22,12 @@ typedef unsigned long long int uint64;
 
 void solve() 
 {
-    // code here
+    int r, b; cin >> r >> b;
+    if (r != b) {
+        int biggest = ((r > b) ? r : b);
+        int smallest = ((r > b) ? b : r);
+        cout << smallest << " " << (biggest - smallest) / 2 << "\n";
+    } else cout << r << " 0" << "\n";
 }
 
 int main() 
@@ -28,7 +35,7 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     int t = 1;
-    bool haveTestCases = 1; // change accordingly
+    bool haveTestCases = 0; // change accordingly
     if (haveTestCases) cin >> t;
     for (int i = 0; i < t; ++i) {
         solve();
