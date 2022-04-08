@@ -26,7 +26,7 @@ void solve()
         int count = sLen - 2;
 
         string ans;
-        ans = s[0] + to_string(count) + s.back();
+        ans = s.front() + to_string(count) + s.back();
         
         cout << ans << "\n";
     } else {
