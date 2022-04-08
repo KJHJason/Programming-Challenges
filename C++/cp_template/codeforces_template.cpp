@@ -25,8 +25,7 @@ void solve()
 
 int main() 
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    ios_base::sync_with_stdio(false); cin.tie(NULL);
     int t = 1;
     bool haveTestCases = 1; // change accordingly
     if (haveTestCases) cin >> t;
