@@ -5,7 +5,7 @@ typedef int_fast32_t fi32;
 typedef int_fast64_t fi64;
 
 typedef vector<int> vi;
-typedef vector<fi64> vif64;
+typedef vector<fi64> vfi64;
 typedef pair<int, int> pii;
 
 typedef long int int32;
