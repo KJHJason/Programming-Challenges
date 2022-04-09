@@ -1,11 +1,13 @@
+// https://codeforces.com/problemset/problem/977/A
+
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef int_fast32_t fi32;
-typedef int_fast64_t fi64;
+typedef int_fast32_t fint32;
+typedef int_fast64_t fint64;
 
 typedef vector<int> vi;
-typedef vector<fi64> vif64;
+typedef vector<fint64> vif64;
 typedef pair<int, int> pi;
 
 typedef long int int32;
@@ -20,14 +22,19 @@ typedef unsigned long long int uint64;
 
 void solve() 
 {
-    // code here
+    fint64 n; int k; cin >> n >> k;
+    for (int i = 0; i < k; i++) {
+        if (n % 10 == 0) n /= 10;
+        else n--;
+    }
+    cout << n << "\n";
 }
 
 int main() 
 {
     ios_base::sync_with_stdio(false); cin.tie(NULL);
     int t = 1;
-    bool haveTestCases = 1; // change accordingly
+    bool haveTestCases = 0; // change accordingly
     if (haveTestCases) cin >> t;
     for (int i = 0; i < t; ++i) {
         solve();
