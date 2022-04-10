@@ -1,7 +1,7 @@
 // https://codeforces.com/problemset/problem/1606/A
 
 #include <bits/stdc++.h>
-using namespace std;1
+using namespace std;
 #define br "\n";
 
 string getABorBA(string in, int i) {
