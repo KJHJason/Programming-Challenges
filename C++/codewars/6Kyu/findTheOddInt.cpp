@@ -21,4 +21,5 @@ int main()
 {
     std::vector<int> v = {1,1,2,2,2,3,3};
     std::cout << findOdd(v) << "\n";
+    return 0;
 }
