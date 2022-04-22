@@ -1,3 +1,6 @@
+// Codeforces template by KJHJason
+// For C++20
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -17,6 +20,8 @@ typedef unsigned long long int uint64;
 #define MP make_pair
 #define F first
 #define S second
+#define coutArr(x) for (const auto& n : x) cout << n << " "; cout << "\n";
+#define coutMap(m) for (const auto& [key, value] : m) cout << key << " " << value << "\n";
 
 const fi64 MOD = 998244353;
 

@@ -1,3 +1,5 @@
+// Codewars template by KJHJason
+
 #include <iostream>
 #include <string>
 #include <sstream>
