@@ -29,14 +29,15 @@ typedef unsigned long long int ulli;
 #define MP make_pair
 #define F first
 #define S second
+#define inpToVec(v) for (auto& i : v) cin >> i
 #define sortA(v) sort(v.begin(), v.end())
 #define sortD(v) sort(v.begin(), v.end(), greater{})
-#define coutArr(x) for (const auto& n : x) cout << n << " "; cout << "\n"
-#define coutMap(m) for (const auto& [key, value] : m) cout << key << " " << value << "\n"
-#define coutY cout << "YES\n"
-#define coutN cout << "NO\n"
-#define coutYN(b) cout << (b ? "YES" : "NO") << "\n"
-#define coutAns(ans) cout << ans << "\n"
+#define prtArr(x) for (const auto& n : x) cout << n << " "; cout << "\n"
+#define prtMap(m) for (const auto& [key, value] : m) cout << key << " " << value << "\n"
+#define prtY cout << "YES\n"
+#define prtN cout << "NO\n"
+#define prtYN(b) cout << (b ? "YES" : "NO") << "\n"
+#define prtAns(ans) cout << ans << "\n"
 
 const fi64 MOD = 998244353;
 
