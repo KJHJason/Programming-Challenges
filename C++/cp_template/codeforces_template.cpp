@@ -30,6 +30,7 @@ typedef unsigned long long int ulli;
 #define coutMap(m) for (const auto& [key, value] : m) cout << key << " " << value << "\n";
 #define coutY cout << "YES\n";
 #define coutN cout << "NO\n";
+#define coutYN(b) cout << (b ? "YES" : "NO") << "\n";
 #define coutAns(ans) cout << ans << "\n";
 
 const fi64 MOD = 998244353;
