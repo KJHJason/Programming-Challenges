@@ -14,7 +14,12 @@ typedef unordered_map<int, int> umii;
 typedef unordered_map<fi64, fi64> umfi64;
 typedef unordered_map<string, int> umsi;
 typedef unordered_map<string, fi64> umsfi64;
+typedef map<int, int> mii;
+typedef map<fi64, fi64> mfifi;
+typedef map<string, int> msi;
+typedef map<string, fi64> msfi;
 
+typedef long double ld;
 typedef long int li;
 typedef unsigned long int uli;
 typedef long long int lli;
