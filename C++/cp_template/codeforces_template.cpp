@@ -24,6 +24,8 @@ typedef unsigned long long int ulli;
 #define MP make_pair
 #define F first
 #define S second
+#define sortA(v) sort(v.begin(), v.end())
+#define sortD(v) sort(v.begin(), v.end(), [](const int a, const int b) {return a > b;})
 #define coutArr(x) for (const auto& n : x) cout << n << " "; cout << "\n";
 #define coutMap(m) for (const auto& [key, value] : m) cout << key << " " << value << "\n";
 #define coutY cout << "YES\n";
