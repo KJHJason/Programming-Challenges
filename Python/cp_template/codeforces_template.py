@@ -1,47 +1,28 @@
 # Template by KJHJason
 
-import sys
+import sys, math
 
 def get_intl(): 
-    """
-    Get an array of integer input from stdin
-    
-    Returns a list of integers
-    """
+    """Returns a list of integer from stdin"""
     return list(map(int, sys.stdin.readline().strip().split()))
-
 def get_int(): 
-    """
-    Get integer input from stdin
-    
-    Return a integer
-    """
+    """Returns an integer from stdin"""
     return int(sys.stdin.readline().strip())
-    
 def get_strl(): 
-    """
-    Get string input from stdin
-    
-    Returns a list of strings
-    """
+    """Returns a list of strings from stdin"""
     return sys.stdin.readline().strip().split()
-
 def get_str(): 
-    """
-    Get string input from stdin
-    
-    Returns a string
-    """
+    """Returns a string from stdin"""
     return sys.stdin.readline().strip()
-
 def prt(msg=""):
-    """
-    print function
-    """
+    """print function using sys.stdout"""
     if (isinstance(msg, list)):
         sys.stdout.write(" ".join(map(str, msg)) + "\n")
     else:
         sys.stdout.write(str(msg) + "\n")
+
+sys.setrecursionlimit(100000000)
+MOD = 998244353
 
 def solve():
     # main code here
