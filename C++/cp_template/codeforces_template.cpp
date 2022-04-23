@@ -10,11 +10,15 @@ typedef int_fast64_t fi64;
 typedef vector<int> vi;
 typedef vector<fi64> vfi64;
 typedef pair<int, int> pii;
+typedef unordered_map<int, int> umii;
+typedef unordered_map<fi64, fi64> umfi64;
+typedef unordered_map<string, int> umsi;
+typedef unordered_map<string, fi64> umsfi64;
 
-typedef long int int32;
-typedef unsigned long int uint32;
-typedef long long int int64;
-typedef unsigned long long int uint64;
+typedef long int li;
+typedef unsigned long int uli;
+typedef long long int lli;
+typedef unsigned long long int ulli;
 
 #define PB push_back
 #define MP make_pair
@@ -22,6 +26,9 @@ typedef unsigned long long int uint64;
 #define S second
 #define coutArr(x) for (const auto& n : x) cout << n << " "; cout << "\n";
 #define coutMap(m) for (const auto& [key, value] : m) cout << key << " " << value << "\n";
+#define coutY cout << "YES\n";
+#define coutN cout << "NO\n";
+#define coutAns(ans) cout << ans << "\n";
 
 const fi64 MOD = 998244353;
 
