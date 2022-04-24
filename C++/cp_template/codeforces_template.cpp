@@ -1,5 +1,5 @@
 // Codeforces template by KJHJason
-// For C++20
+// For C++17 and above
 
 #include <bits/stdc++.h>
 using namespace std;
