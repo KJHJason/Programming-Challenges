@@ -1,4 +1,4 @@
-// https://codeforces.com/contest/1669/problem/B
+// https://codeforces.com/contest/50/problem/A
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -38,22 +38,13 @@ typedef unsigned long long int ulli;
 #define prtYN(b) cout << (b ? "YES" : "NO") << "\n"
 #define prtAns(ans) cout << ans << "\n"
 
+const fi64 MOD = 998244353;
+
 void solve() 
 {
-    int n; cin >> n;
-    unordered_map<int, int> m;
-    int ans{-1};
-    for (int i = 0; i < n; i++) {
-        int x; cin >> x;
-        if (m.find(x) != m.end()) {
-            m[x]++;
-            if (m[x] >= 3) {
-                ans = x;
-            }
-        } else {
-            m[x] = 1;
-        }
-    }
+    int m, n; cin >> m >> n;
+    int numSq{m * n};
+    int ans{numSq / 2};
     prtAns(ans);
 }
 
@@ -61,7 +52,7 @@ int main()
 {
     ios_base::sync_with_stdio(false); cin.tie(NULL);
     int t = 1;
-    bool haveTestCases = 1; // change accordingly
+    bool haveTestCases = 0; // change accordingly
     if (haveTestCases) cin >> t;
     for (int i = 0; i < t; ++i) {
         solve();

@@ -1,4 +1,4 @@
-// https://codeforces.com/contest/1669/problem/B
+// https://codeforces.com/problemset/problem/1520/A
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -38,23 +38,33 @@ typedef unsigned long long int ulli;
 #define prtYN(b) cout << (b ? "YES" : "NO") << "\n"
 #define prtAns(ans) cout << ans << "\n"
 
+const fi64 MOD = 998244353;
+
 void solve() 
 {
-    int n; cin >> n;
-    unordered_map<int, int> m;
-    int ans{-1};
+    int n; string s;
+    cin >> n >> s;
+    vector<int> arr;
+    bool ok{1};
     for (int i = 0; i < n; i++) {
-        int x; cin >> x;
-        if (m.find(x) != m.end()) {
-            m[x]++;
-            if (m[x] >= 3) {
-                ans = x;
+        if (find(arr.begin(), arr.end(), s[i]) != arr.end()) {
+            ok = 0;
+            break;
+        }
+        else {
+            arr.PB(s[i]);
+            for (int j = i + 1; j < n; j++) {
+                if (s[j] != s[i]) {
+                    i = j - 1;
+                    break;
+                } else if (j == n-1) {
+                    prtYN(ok);
+                    return;
+                }
             }
-        } else {
-            m[x] = 1;
         }
     }
-    prtAns(ans);
+    prtYN(ok);
 }
 
 int main() 
