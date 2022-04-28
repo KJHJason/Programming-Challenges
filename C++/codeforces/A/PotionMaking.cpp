@@ -1,5 +1,4 @@
-// Codeforces template by KJHJason
-// For C++17 and above
+// https://codeforces.com/problemset/problem/1525/A
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -43,7 +42,11 @@ const fi64 MOD {998244353};
 
 void solve() 
 {
-    // code here
+    int k; cin >> k;
+    int r = 100 - k;
+    int d = gcd(k, r);
+    int ans = (k / d) + (r / d);
+    prtAns(ans);
 }
 
 int main() 

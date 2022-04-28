@@ -1,5 +1,4 @@
-// Codeforces template by KJHJason
-// For C++17 and above
+// https://codeforces.com/problemset/problem/822/A
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -41,16 +40,28 @@ typedef unsigned long long int ulli;
 
 const fi64 MOD {998244353};
 
+fi64 nFactorial(const fi64& x) 
+{
+    fi64 ans {1};
+    for (fi64 i = 1; i <= x; ++i)
+        ans = (ans * i) % MOD;
+    return ans;
+}
+
 void solve() 
 {
-    // code here
+    fi64 n, m;
+    cin >> n >> m;
+    fi64 ans;
+    ans = nFactorial(min(n, m));
+    prtAns(ans);
 }
 
 int main() 
 {
     ios_base::sync_with_stdio(false); cin.tie(NULL);
     int t = 1;
-    bool haveTestCases = 1; // change accordingly
+    bool haveTestCases = 0; // change accordingly
     if (haveTestCases) cin >> t;
     for (int i = 0; i < t; ++i) {
         solve();
