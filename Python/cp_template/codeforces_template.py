@@ -20,6 +20,22 @@ def prt(msg=""):
         sys.stdout.write(" ".join(map(str, msg)) + "\n")
     else:
         sys.stdout.write(str(msg) + "\n")
+def prtY():
+    """print "YES" using sys.stdout"""
+    sys.stdout.write("YES\n")
+def prtN():
+    """print "NO" using sys.stdout"""
+    sys.stdout.write("NO\n")
+def prtYN(cond=False):
+    """print "YES" or "NO" using sys.stdout
+    
+    args: 
+    - cond (bool): if true, print "YES", else print "NO"
+    """
+    if (cond):
+        prtY()
+    else:
+        prtN()
 
 sys.setrecursionlimit(100000000)
 MOD = 998244353
