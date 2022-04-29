@@ -25,9 +25,8 @@ sys.setrecursionlimit(100000000)
 MOD = 998244353
 
 def solve():
-    stra =  get_str()
-    uniqueStr = {i for i in stra}
-    if (len(uniqueStr) & 1):
+    inpStr =  set(get_str())
+    if (len(inpStr) & 1):
         prt("IGNORE HIM!")
     else:
         prt("CHAT WITH HER!")
