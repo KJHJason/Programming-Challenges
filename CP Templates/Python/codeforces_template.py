@@ -26,7 +26,7 @@ def prtY():
 def prtN():
     """print "NO" using sys.stdout"""
     sys.stdout.write("NO\n")
-def prtYN(cond=False):
+def prtYN(cond):
     """print "YES" or "NO" using sys.stdout
     
     args: 
