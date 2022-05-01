@@ -17,6 +17,7 @@
 #define sortD(v) std::sort(v.begin(), v.end(), std::greater{})
 #define prtArr(x) for (const auto& n : x) std::cout << n << " "; std::cout << "\n"
 #define prtMap(m) for (const auto& [key, value] : m) std::cout << key << " " << value << "\n"
+#define prt(s) std::cout << s << "\n"
 
 // write the base function here from codewars below
 
