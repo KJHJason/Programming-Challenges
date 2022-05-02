@@ -1,5 +1,4 @@
-// Codeforces template by KJHJason
-// For C++17 and above
+// https://codeforces.com/contest/1674/problem/C
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -42,9 +41,28 @@ typedef unsigned long long int ulli;
 
 const fi64 MOD {998244353};
 
+int count(const string& s)
+{
+    int n{};
+    for (int i = 0; i < s.length(); ++i)
+        if (s[i] == 'a')
+            n++;
+    return n;
+}
+
 void solve() 
 {
-    // code here
+    string s, t; cin >> s >> t;
+    int aNum {count(t)};
+
+    if (aNum == 1 && t.length() == 1)
+        prtAns(1);
+    else if (aNum >= 1 && t.length() > 1)
+        prtAns(-1);
+    else {
+        fi64 ans{pow(2, s.length())};
+        prtAns(ans);
+    }
 }
 
 int main() 

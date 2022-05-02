@@ -1,5 +1,4 @@
-// Codeforces template by KJHJason
-// For C++17 and above
+// https://codeforces.com/contest/1674/problem/B
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -44,7 +43,19 @@ const fi64 MOD {998244353};
 
 void solve() 
 {
-    // code here
+    string s; cin >> s;
+    int ans{};
+    
+    int c1 = (int)s[0] - (int)'a';
+    int c2 = (int)s[1] - (int)'a';
+
+    ans += c1 * 25;
+    ans += c2 + 1;
+
+    if (s[1] > s[0])
+        ans--;
+
+    prtAns(ans);
 }
 
 int main() 

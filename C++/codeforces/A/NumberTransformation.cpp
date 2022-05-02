@@ -1,5 +1,4 @@
-// Codeforces template by KJHJason
-// For C++17 and above
+// https://codeforces.com/contest/1674/problem/0
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -44,7 +43,14 @@ const fi64 MOD {998244353};
 
 void solve() 
 {
-    // code here
+    ui x, y; cin >> x >> y;
+    ui b = y % x, ans = y / x;
+    if (x > y)
+        cout << 0 << " " << 0 << "\n";
+    else if (b == 0)
+        cout << 1 << " " << ans << "\n";
+    else 
+        cout << 0 << " " << 0 << "\n";
 }
 
 int main() 
