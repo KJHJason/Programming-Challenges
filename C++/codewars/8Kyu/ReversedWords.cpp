@@ -38,7 +38,7 @@ std::string reverse_words_method_1(const std::string& str) {
         words.PB(word);
 
     std::reverse(words.begin(), words.end());
-    std::string result; uli counter{};
+    std::string result;
     for (const auto& word : words)
         result += word + " ";
 

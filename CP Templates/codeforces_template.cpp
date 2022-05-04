@@ -39,9 +39,12 @@ using namespace std;
 
 typedef int_fast32_t fi32;
 typedef int_fast64_t fi64;
+typedef uint_fast32_t ufi32;
+typedef uint_fast64_t ufi64;
 
 typedef vector<int> vi;
 typedef vector<fi64> vfi64;
+typedef vector<ufi64> vufi64;
 typedef pair<int, int> pii;
 typedef unordered_map<int, int> umii;
 typedef unordered_map<fi64, fi64> umfi64;
