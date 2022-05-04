@@ -60,7 +60,7 @@ void prt2DArr(matrix& arr) {
     std::cout << "\n";
 }
 
-long double fib(int n)
+fi32 fib(fi32 n)
 {
     if (n == 0)
         return 0;
