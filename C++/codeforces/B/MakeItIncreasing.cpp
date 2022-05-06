@@ -77,8 +77,8 @@ typedef unsigned long long int ulli;
 
 const fi64 MOD {998244353};
 
-bool checkIncreasing(const vfi64& arr, int n) {
-    for (int i = 0; i < n-1; ++i) {
+bool checkIncreasing(const vfi64& arr) {
+    for (int i = 0; i < arr.size()-1; ++i) {
         if (arr[i] >= arr[i+1]) {
             return 0;
         }
@@ -90,31 +90,27 @@ void solve()
 {
     int n; cin >> n;
     vfi64 arr(n); inpToVec(arr);
-    if (n == 1 || checkIncreasing(arr, n)) {
+    if (n == 1 || checkIncreasing(arr)) {
         prtAns(0);
         return;
     }
 
     fi64 ans{};
-    fi64 el = arr[n-1];
+    fi64 temp = arr[n-1];
     for (int i = n-2; i >= 0; --i) {
-        if (arr[i] < el) {
-            el = arr[i];
+        if (arr[i] < temp) {
+            temp = arr[i];
         }
         else {
-            while (el <= arr[i] && el != 0) {
+            while (temp <= arr[i] && temp != 0) {
                 ans++;
                 arr[i] /= 2;
             }
-            el = arr[i];
+            temp = arr[i];
         }
     }
 
-    bool ok = checkIncreasing(arr, n);
-    if (ok)
-        prtAns(ans);
-    else
-        prtAns(-1);
+    cout << (checkIncreasing(arr) ? ans : -1) << "\n";
 }
 
 int main() 
