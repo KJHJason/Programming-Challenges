@@ -25,7 +25,9 @@
 
 int main()
 {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
+    prt("Input: ");
+    prt("Output: ");
+    assert(1 == 1);
+    prt("Test 1 passed\n");
     return 0;
 }
