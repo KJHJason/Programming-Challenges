@@ -77,25 +77,25 @@ typedef unsigned long long int ulli;
 
 const fi64 MOD {998244353};
 
-void print2DVector(const vector<vi>& vec) {
-    for (const auto& v : vec) {
-        for (const auto& n : v) {
-            cout << n << " ";
-        }
-        cout << "\n";
-    }
-}
+// void print2DVector(const vector<vi>& vec) {
+//     for (const auto& v : vec) {
+//         for (const auto& n : v) {
+//             cout << n << " ";
+//         }
+//         cout << "\n";
+//     }
+// }
 
-bool checkSameDiag(const vector<vi>& vec, vi x, vi y, int m, int n)
-{
-    int I = x[0], J = x[1];
-    int P = y[0], Q = y[1];
+// bool checkSameDiag(const vector<vi>& vec, vi x, vi y, int m, int n)
+// {
+//     int I = x[0], J = x[1];
+//     int P = y[0], Q = y[1];
 
-    if (P - Q == I - J || P + Q == I + J)
-        return 1;
-    else
-        return 0;
-}
+//     if (P - Q == I - J || P + Q == I + J)
+//         return 1;
+//     else
+//         return 0;
+// }
 
 void solve() 
 {
