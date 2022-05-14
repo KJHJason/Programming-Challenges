@@ -31,8 +31,7 @@
 // ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
 // ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
 //
-// Codeforces template by KJHJason
-// For C++17 and above
+// https://codeforces.com/contest/1679/problem/A
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -81,7 +80,36 @@ const fi64 MOD {998244353};
 
 void solve() 
 {
-    // code here
+    fi64 n; cin >> n;
+    // case 1: num of tyres is less than 4
+    // or num of tyres is odd
+    if (n < 4 || n & 1) {
+        prtAns(-1);
+        return;
+    }
+
+    // other case
+    fi64 num4{}, num6{}, temp{n}, count4{}, count6{};
+    while (temp % 6) {
+        temp -= 4;
+        count4++;
+    }
+    num6 = temp / 6;
+
+    while (n % 4) {
+        n -= 6;
+        count6++;
+    }
+    num4 = (n / 4) + count6;
+
+    num6 += count4;
+    if (num4 == 0 || num6 == 0) {
+        temp = max(num4, num6);
+        prt2Ans(temp, temp);
+    }
+    else {
+        prt2Ans(num6, num4);
+    }
 }
 
 int main() 
